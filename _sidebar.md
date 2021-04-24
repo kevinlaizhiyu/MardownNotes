@@ -1,7 +1,22 @@
-- **01-Vue**
-  - Intro
-    - [01-Vue是什么](/01-Vue/Intro/01-Vue是什么/README.md)
-- [02-Vuex](/02-Vuex/README.md)
+- [01-Vue](/01-Vue/README.md)
+- **02-Vuex**
+  - 01-介绍
+    - [01-Vuex是什么](/02-Vuex/01-介绍/01-Vuex是什么/README.md)
+    - [02-安装](/02-Vuex/01-介绍/02-安装/README.md)
+    - [03-开始](/02-Vuex/01-介绍/03-开始/README.md)
+  - 02-核心概念
+    - [01-State](/02-Vuex/02-核心概念/01-State/README.md)
+    - [02-Getters](/02-Vuex/02-核心概念/02-Getters/README.md)
+    - [03-Mutations](/02-Vuex/02-核心概念/03-Mutations/README.md)
+    - [04-Actions](/02-Vuex/02-核心概念/04-Actions/README.md)
+    - [05-Modules](/02-Vuex/02-核心概念/05-Modules/README.md)
+  - 03-进阶
+    - [01-项目结构](/02-Vuex/03-进阶/01-项目结构/README.md)
+    - [02-插件](/02-Vuex/03-进阶/02-插件/README.md)
+    - [03-严格模式](/02-Vuex/03-进阶/03-严格模式/README.md)
+    - [04-表单处理](/02-Vuex/03-进阶/04-表单处理/README.md)
+    - [05-测试](/02-Vuex/03-进阶/05-测试/README.md)
+    - [06-热重载](/02-Vuex/03-进阶/06-热重载/README.md)
 - [03-Nuxtjs](/03-Nuxtjs/README.md)
 - [04React](/04React/README.md)
 - [05-Redux](/05-Redux/README.md)
