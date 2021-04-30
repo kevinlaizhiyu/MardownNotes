@@ -1,15 +1,15 @@
 <!-- _coverpage.md -->
 
 
-# docsify <small>3.5</small>
+# Kevin's Docsify Notes <small>3.5</small>
 
-> 一个神奇的文档网站生成器。
+> 前端常用的知识架构。
 
-- 简单、轻便 (压缩后 ~21kB)
-- 无需生成 html 文件
-- 众多主题
+- 全面
+- 详细
+- 美观
 
-[GitHub](https://github.com/docsifyjs/docsify/)
+[GitHub](https://github.com/kevinlaizhiyu/MardownNotes)
 [Get Started](#docsify)
 
 <!-- ![](tennis.jpeg) -->
