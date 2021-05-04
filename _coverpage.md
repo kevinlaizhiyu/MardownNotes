@@ -10,6 +10,6 @@
 - 美观
 
 [GitHub](https://github.com/kevinlaizhiyu/MardownNotes)
-[Get Started](#docsify)
-
+[Get Started](01-Vue/01-基础/01-安装/REAME)
+<!-- 此处直接跟上路由即可 -->
 <!-- ![](tennis.jpeg) -->
