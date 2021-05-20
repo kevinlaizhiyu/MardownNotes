@@ -121,7 +121,10 @@
   - [09-FAQ](/04-React/09-FAQ/README.md)
 - [05-Redux](/05-Redux/README.md)
 - [06-Nextjs](/06-Nextjs/README.md)
-- [07-Es6](/07-Es6/README.md)
+- **07-Es6**
+  - [01-ECMAScript简介](/07-Es6/01-ECMAScript简介/README.md)
+  - [02-let和const命令](/07-Es6/02-let和const命令/README.md)
+  - [03-变量的解构赋值](/07-Es6/03-变量的解构赋值/README.md)
 - [08-Express](/08-Express/README.md)
 - [09-Koa](/09-Koa/README.md)
 - **10-Egg**
