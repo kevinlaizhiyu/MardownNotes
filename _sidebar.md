@@ -2,8 +2,9 @@
   - 01-基础
     - [01-安装](/01-Vue/01-基础/01-安装/REAME.md)
     - [02-介绍](/01-Vue/01-基础/02-介绍/REAME.md)
-    - [03-Vue实例](/01-Vue/01-基础/03-Vue实例/REAME.md)
+    - [03-应用&组件实例](/01-Vue/01-基础/03-应用&组件实例/REAME.md)
     - [04-模板语法](/01-Vue/01-基础/04-模板语法/REAME.md)
+    - [04.5-DataProperty和方法](/01-Vue/01-基础/04.5-DataProperty和方法/README.md)
     - [05-计算和侦听属性](/01-Vue/01-基础/05-计算和侦听属性/REAME.md)
     - [06-class和style绑定](/01-Vue/01-基础/06-class和style绑定/REAME.md)
     - [07-条件渲染](/01-Vue/01-基础/07-条件渲染/REAME.md)
@@ -119,12 +120,25 @@
   - [07-CONCURRENT模式（实验阶段）](/04-React/07-CONCURRENT模式（实验阶段）/README.md)
   - [08-贡献](/04-React/08-贡献/README.md)
   - [09-FAQ](/04-React/09-FAQ/README.md)
-- [05-Redux](/05-Redux/README.md)
+- **05-Redux**
+  - 01-简介
+    - [01-redux入门](/05-Redux/01-简介/01-redux入门/README.md)
+    - [02-安装](/05-Redux/01-简介/02-安装/README.md)
+    - [03-核心概念](/05-Redux/01-简介/03-核心概念/README.md)
+    - [04-三大原则](/05-Redux/01-简介/04-三大原则/README.md)
+    - [05-先前技术](/05-Redux/01-简介/05-先前技术/README.md)
+    - [06-学习资源](/05-Redux/01-简介/06-学习资源/README.md)
+    - [07-生态系统](/05-Redux/01-简介/07-生态系统/README.md)
+    - [08-示例](/05-Redux/01-简介/08-示例/README.md)
 - [06-Nextjs](/06-Nextjs/README.md)
 - **07-Es6**
   - [01-ECMAScript简介](/07-Es6/01-ECMAScript简介/README.md)
   - [02-let和const命令](/07-Es6/02-let和const命令/README.md)
   - [03-变量的解构赋值](/07-Es6/03-变量的解构赋值/README.md)
+  - [04-字符串的扩展](/07-Es6/04-字符串的扩展/README.md)
+  - [05-字符串新增的方法](/07-Es6/05-字符串新增的方法/README.md)
+  - [06-正则的扩展](/07-Es6/06-正则的扩展/README.md)
+  - [07-数值的扩展](/07-Es6/07-数值的扩展/README.md)
 - [08-Express](/08-Express/README.md)
 - [09-Koa](/09-Koa/README.md)
 - **10-Egg**
