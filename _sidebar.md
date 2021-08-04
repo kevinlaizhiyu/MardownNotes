@@ -34,12 +34,7 @@
       - [03-生命周期钩子](/01-Vue/04-可复用性&组合/01-组合式API/03-生命周期钩子/REAME.md)
       - [04Provide&Inject](/01-Vue/04-可复用性&组合/01-组合式API/04Provide&Inject/REAME.md)
       - [05-模板引用](/01-Vue/04-可复用性&组合/01-组合式API/05-模板引用/REAME.md)
-    - 02-Mixin
-      - [01-基础](/01-Vue/04-可复用性&组合/02-Mixin/01-基础/REAME.md)
-      - [02-选项合并](/01-Vue/04-可复用性&组合/02-Mixin/02-选项合并/REAME.md)
-      - [03全局mix-in](/01-Vue/04-可复用性&组合/02-Mixin/03全局mix-in/REAME.md)
-      - [04-自定义选项合并策略](/01-Vue/04-可复用性&组合/02-Mixin/04-自定义选项合并策略/REAME.md)
-      - [05-不足](/01-Vue/04-可复用性&组合/02-Mixin/05-不足/REAME.md)
+    - [02-Mixin](/01-Vue/04-可复用性&组合/02-Mixin/REAME.md)
     - [03-自定义指令](/01-Vue/04-可复用性&组合/03-自定义指令/REAME.md)
     - [04-Teleport](/01-Vue/04-可复用性&组合/04-Teleport/REAME.md)
     - [05-渲染函数](/01-Vue/04-可复用性&组合/05-渲染函数/REAME.md)
