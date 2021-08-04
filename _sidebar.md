@@ -79,7 +79,9 @@
     - [05-测试](/02-Vuex/03-进阶/05-测试/README.md)
     - [06-热重载](/02-Vuex/03-进阶/06-热重载/README.md)
   - [04-API](/02-Vuex/04-API/REAME.md)
-- [03-Nuxtjs](/03-Nuxtjs/README.md)
+- **03-Nuxtjs**
+  - [01-安装](/03-Nuxtjs/01-安装/README.md)
+  - [02-目录结构](/03-Nuxtjs/02-目录结构/README.md)
 - **04-React**
   - 01-安装
     - [01-开始](/04-React/01-安装/01-开始/README.md)
