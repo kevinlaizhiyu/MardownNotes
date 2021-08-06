@@ -260,3 +260,28 @@ export default {
 ```
 
 ## `SPA fallback`
+
+您也可以为动态路由启用 `SPA fallback`。在使用 `mode:'spa'` 模式下，`Nuxt.js` 将输出一个与`index.html`相同的额外文件。如果没有文件匹配，大多数静态托管服务可以配置为使用 `SPA` 模板。生成文件不包含头信息或任何 `HTML`，但它仍将解析并加载 `API` 中的数据。
+
+我们在`nuxt.config.js`文件中启用它：
+
+```js
+export default {
+  generate: {
+    fallback: true, // if you want to use '404.html'
+    fallback: 'my-fallback/file.html' // if your hosting needs a custom location
+  }
+}
+```
+在 `Surge` 上实现
+
+`Surge` 可以处理`200.html` 和 `404.html`，generate.fallback默认设置为200.html，因此无需更改它。
+
+在 `GitHub Pages` 和 `Netlify` 上实现
+`GitHub Pages` 和 `Netlify` 自动识别 `404.html`文件，所以我们需要做的就是将 `generate.fallback` 设置为 `true`！
+
+在 `Firebase Hosting` 上实现
+要在 `Firebase Hosting` 上使用，请将 `generate.fallback` 配置为 `true` 并使用以下配置 (`more info`)：
+
+
+
