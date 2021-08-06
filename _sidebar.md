@@ -82,6 +82,13 @@
 - **03-Nuxtjs**
   - [01-安装](/03-Nuxtjs/01-安装/README.md)
   - [02-目录结构](/03-Nuxtjs/02-目录结构/README.md)
+  - [03-配置](/03-Nuxtjs/03-配置/README.md)
+  - [04-路由](/03-Nuxtjs/04-路由/README.md)
+  - [05-视图](/03-Nuxtjs/05-视图/README.md)
+  - [06-异步数据](/03-Nuxtjs/06-异步数据/README.md)
+  - [07-资源文件](/03-Nuxtjs/07-资源文件/README.md)
+  - [08-插件](/03-Nuxtjs/08-插件/README.md)
+  - [09-模块](/03-Nuxtjs/09-模块/README.md)
 - **04-React**
   - 01-安装
     - [01-开始](/04-React/01-安装/01-开始/README.md)
