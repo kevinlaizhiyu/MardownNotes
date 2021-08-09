@@ -89,6 +89,7 @@
   - [07-资源文件](/03-Nuxtjs/07-资源文件/README.md)
   - [08-插件](/03-Nuxtjs/08-插件/README.md)
   - [09-模块](/03-Nuxtjs/09-模块/README.md)
+  - [10-Vuex状态树](/03-Nuxtjs/10-Vuex状态树/README.md)
 - **04-React**
   - 01-安装
     - [01-开始](/04-React/01-安装/01-开始/README.md)
