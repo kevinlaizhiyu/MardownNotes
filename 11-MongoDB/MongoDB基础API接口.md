@@ -922,8 +922,9 @@ db.c1.createIndex({name:1},{unique:true})
 ## 分析索引（explain）
 * 语法：db.集合名.find().expalin( 'executionStats')
 * 说明：
-![image-20210907150456866](./image-20210907150456866.png)
+  ![image-20210907150456866](./image-20210907150456866.png)
   
+
 COLLSCAN 全表扫描
 
 IXSCAN 索引扫描
@@ -1000,7 +1001,7 @@ db.createUser({
 >  read：允许用户读取指定数据库
 > 
 >  readWrite：允许用户读写指定数据库
- 
+
 ## 开启验证模式
 
 ```shell
@@ -1154,8 +1155,113 @@ mongoose 核心概念
 
 ## 语法
 
+* 安装mongoose
 
-# 17. 接口概念
+```shell
+npm i mongoose 
+```
+
+在注意要使用 node 11 + 的版本
+
+* 文件结构
+
+```text
+api
+  |__connect
+  |  |__dbConnection.js
+  |  |__dbModels.js
+  |__controller
+     |__c.js
+     |__u.js
+     |__r.js
+     |__d.js  
+
+```
+
+* 链接数据库
+
+`/api/connect/dbConnection.js`
+
+```js
+const mongoose = require('mongoose');
+const url = 'mongodb://localhost:27017/test5'
+const options = {useNewUrlParser:true,useUnifiedTopology:true}
+
+const db = mongoose.createConnection(url,options,(err)=>{
+    if(err){
+        console.log('数据库连接失败')
+        db.close()
+        return
+    }
+    console.log("数据库连接成功")
+})
+
+module.exports= db
+```
+
+* 创建schema模型
+
+`/api/connect/dbModels.js`
+
+```js
+const db = require('./dbConnection');
+const model = db.model('api',{
+    uname:{type:String,default:'kevinlaizhiyu'},
+    pwd:{type:String,default:"lai759728"},
+    age:{type:Number},
+    sex:{type:String}
+})
+
+module.exports = {
+    model
+}
+```
+
+* 使用
+
+`/api/controller/c.js`
+
+```js
+const db = require('../connect/dbConnection');
+const {model} = require('../connect/dbModels')
+const insertData = new model({
+    uname:'davidHuang',
+    pwd:'456123',
+    age:43,
+    sex:'Male'
+})
+
+insertData.save()
+    .then((res)=>{
+        console.log('data insert successfully')
+        db.close()
+        return res
+    })
+    .catch(err=>{
+        console.log('data insert failed')
+        throw err
+        db.close()
+        return
+    })
+
+
+```
+# 17. 接口概念 
+
+## 明确需求
+
+随着移动互联网的发展，客户端层出不穷，微信端，WeB/PC、APP等等，而后端的业务逻辑基本是一致的，为了使业务逻辑一次编写随时接入，于是产生的接口规范
+
+## what is api
+就是一个文件 （js/json/php等等）主要相应的是JSON 数据（体积小，操作方便）或者XML数据
+
+```json
+{
+  "status": 1/0,
+  "msg":'提示信息'
+}
+```
+
 
 # 18. 接口开发规范（RESTful API）
 
