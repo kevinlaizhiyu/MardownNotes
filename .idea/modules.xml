@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/MardownNotes.iml" filepath="$PROJECT_DIR$/.idea/MardownNotes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../api/.idea/api.iml" filepath="$PROJECT_DIR$/../../api/.idea/api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../WorkingSpace/nodejs-caishui-pc-web/.idea/nodejs-caishui-pc-web.iml" filepath="$PROJECT_DIR$/../../WorkingSpace/nodejs-caishui-pc-web/.idea/nodejs-caishui-pc-web.iml" />
     </modules>
   </component>
 </project>
