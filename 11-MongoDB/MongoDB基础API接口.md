@@ -1262,14 +1262,143 @@ insertData.save()
 }
 ```
 
+## 功能
 
+数据角度：让我们的项目静态/固定数据动态（也就是让项目的数据来源于数据库）
+
+功能角度：短信接口、幽默笑话接口、天气接口、股票接口
+
+## 下载
+
+* 方案1 ： 通过 node/go/java/php/asp等语言开发
+* 方案2 ： 调用第三方接口
+ 
 # 18. 接口开发规范（RESTful API）
+
+## 明确需求
+
+思考：接口可能是一个人开发也可能是多个人开发，如何保证大家的编写规范一样
+>
+> 商品模块 /goods/getIndex   get
+> 
+> 订单模块 /order/index    post
+> 
+> 用户模块 /user
+> 
+发现：上述的case 项目么有统一的开发规范
+
+问题：后期维护比较麻烦
+
+解决：RESTful API
+
+## what 
+
+说明：RESTful是目前一种流行的互联网软件架构（思想）
+作用：声明/提供一个接口设计原则和约束条件（一个）
+相关：
+> 后端将资源发布到URL上 ---> 前端通过URL访问资源 ---> 并通过HTTP动词表示要对资源进行操作
+> 
+> 后端定义接口 ---> 前端请求接口 ---> HTTP动词表示操作的目的 （get获取 post新建 put更新）
+> 
+
+举例：
+> 列表页：访问-/模块名                 （get）
+> 
+> 详情页：访问-/模块名/编号             （get）
+> 
+> 添加页：访问-/模块名/create          （get）
+> 
+> 处理：访问-/模块名                   （post）
+> 
+> 修改页：访问-/模块名/编号/edit        （get）
+> 
+> 处理：访问-/模块名/编号               （put）
+> 
+> 删除：访问-/模块名/编号               （delete）
+> 
+> HTTP 动词 get post put  delete
+>
+
+## 标准的RESTful 架构/思想/规则需要做到
+
+> 订单模块
+> 
+> /order get
+> 
+> /order post 
+> 
+> /order/编号 put
+> 
+> /order/编号 delete
+
+* 项目所有所有模块统一的标准
+
+* 看URL就知道操作的资源是什么（也就是哪个模块）
+
+* 看HTTP method就知道操作的资源是什么，是添加（post）还是删除（delete）
+
+* 看HTTP Status Code 就知道操作的结果如何，是成功（200）还是内部错误（500）
 
 # 19. 接口测试工具（Postman & Insomnia）
 
-# 20 .实战教学管理系统学生模块接口开发
+测试 `http` 请求的客户端软件，传递请求参数，查看请求结果
 
-# 21.实战 接口文档开发apiDoc
+# 20. 实战教学管理系统学生模块接口开发
+
+## 20.1 express 简介
+
+* what express是一个基于node开发的框架 （原理基于nodejs内置的http模块封装）
+
+* 好处：加快项目开发，便于团队协作
+
+## 20.2 express 使用
+
+* 安装   
+
+```shell
+npm i express 
+```
+
+1. 引入 express 模块
+```js
+const express = require('express')
+```
+2. 创建 app对象，通过语法 express() 底层原理 http 模块的 createServer
+```js
+const app = express()
+```
+3. 路由，语法 app.HTTP 请求方式（路径，回调函数）
+```js
+app.get('/',(req,res)=>{
+    //send是express用来响应数据的方法
+    res.send('hello')
+})
+```
+4. 启动服务监听
+```js
+app.listen(3000,()=>{
+    console.log('服务启动成功')
+    console.log('http://localhost:300')
+})
+```
+
+## 20.3 学生添加接口
+
+step1: 定义路由 /stu  post
+
+step2: 相应任意的 json 数据
+
+step3: 定义 stu 模块，定义创建数据的方法
+
+step4: 调用 stu 模型创建数据的方法，
+
+
+## 20.4 学生列表接口
+
+## 20.5 学生列表分页接口
+
+
+# 21. 实战接口文档开发apiDoc
 
 
 
